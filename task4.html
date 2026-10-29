@@ -1,0 +1,298 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Fest 2026</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        /* Header */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 30px;
+            background-color: #6c63ff;
+            color: white;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+
+        .nav {
+            display: flex;
+            gap: 16px;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main content */
+        main {
+            max-width: 1100px;
+            margin: auto;
+            padding: 30px 20px;
+        }
+
+        article {
+            margin-bottom: 40px;
+        }
+
+        article > h2 {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        /* Pass Cards */
+        .passes {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 16px;
+        }
+
+        .pass {
+            flex: 1;
+            padding: 25px 15px;
+            text-align: center;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .pass h3 {
+            color: #333;
+        }
+
+        .price {
+            font-size: 26px;
+            font-weight: bold;
+            color: #e63946;
+        }
+
+        /* Day 1 Schedule */
+        .schedule {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .slot {
+            flex: 1;
+            padding: 20px;
+            background-color: white;
+            border: 2px solid #6c63ff;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .slot:first-child {
+            flex: 2;
+            background-color: #e8e6ff;
+        }
+
+        .time {
+            font-weight: bold;
+            color: #6c63ff;
+        }
+
+        /* Event Gallery */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, 100px);
+            gap: 10px;
+        }
+
+        .tile {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 28px;
+            font-weight: bold;
+            border-radius: 8px;
+        }
+
+        /* Five palette colours */
+        .tile:nth-child(1),
+        .tile:nth-child(6) {
+            background-color: #e63946;
+        }
+
+        .tile:nth-child(2),
+        .tile:nth-child(7) {
+            background-color: #457b9d;
+        }
+
+        .tile:nth-child(3),
+        .tile:nth-child(8) {
+            background-color: #2a9d8f;
+        }
+
+        .tile:nth-child(4) {
+            background-color: #f4a261;
+        }
+
+        .tile:nth-child(5) {
+            background-color: #6c63ff;
+        }
+
+        /* Footer */
+        footer {
+            padding: 20px;
+            text-align: center;
+            background-color: #333;
+            color: white;
+        }
+
+        /* Responsive layout */
+        @media (max-width: 700px) {
+            .header {
+                flex-direction: column;
+                gap: 16px;
+                text-align: center;
+            }
+
+            .nav {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .passes,
+            .schedule {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .gallery {
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(4, 100px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header and Navigation -->
+    <header class="header" id="home">
+        <h1>College Fest 2026</h1>
+
+        <nav class="nav">
+            <a href="#home">Home</a>
+            <a href="#schedule">Schedule</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#passes">Passes</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Pass Cards -->
+        <article id="passes">
+            <h2>Choose Your Pass</h2>
+
+            <div class="passes">
+
+                <div class="pass">
+                    <h3>Silver Pass</h3>
+                    <p class="price">₹499</p>
+                    <p>Entry to all events</p>
+                </div>
+
+                <div class="pass">
+                    <h3>Gold Pass</h3>
+                    <p class="price">₹999</p>
+                    <p>Entry + Food Coupons</p>
+                </div>
+
+                <div class="pass">
+                    <h3>Platinum Pass</h3>
+                    <p class="price">₹1499</p>
+                    <p>VIP Entry + Premium Gifts</p>
+                </div>
+
+            </div>
+        </article>
+
+        <!-- Day 1 Schedule -->
+        <article id="schedule">
+            <h2>Day 1 Schedule</h2>
+
+            <div class="schedule">
+
+                <div class="slot">
+                    <p class="time">10:00 AM</p>
+                    <h3>Inauguration Ceremony</h3>
+                    <p>Welcome speech and lamp lighting to begin the college fest.</p>
+                </div>
+
+                <div class="slot">
+                    <p class="time">11:00 AM</p>
+                    <h3>Music</h3>
+                </div>
+
+                <div class="slot">
+                    <p class="time">12:00 PM</p>
+                    <h3>Lunch Break</h3>
+                    <p>Enjoy lunch with friends.</p>
+                </div>
+
+                <div class="slot">
+                    <p class="time">2:00 PM</p>
+                    <h3>Games and Activities</h3>
+                    <p>Participate in fun competitions and team challenges.</p>
+                </div>
+
+            </div>
+        </article>
+
+        <!-- Event Gallery -->
+        <article id="gallery">
+            <h2>Event Gallery</h2>
+
+            <div class="gallery">
+                <div class="tile">1</div>
+                <div class="tile">2</div>
+                <div class="tile">3</div>
+                <div class="tile">4</div>
+                <div class="tile">5</div>
+                <div class="tile">6</div>
+                <div class="tile">7</div>
+                <div class="tile">8</div>
+            </div>
+        </article>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 College Fest. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

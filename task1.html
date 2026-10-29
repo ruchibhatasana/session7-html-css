@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Fest - Passes</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 30px;
+            background-color: #f4f4f9;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .passes {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 16px;
+            margin-top: 30px;
+        }
+
+        .pass {
+            flex: 1;
+            padding: 25px 15px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            background-color: white;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .pass h2 {
+            color: #333;
+        }
+
+        .pass p {
+            color: #555;
+        }
+
+        .price {
+            font-size: 26px;
+            font-weight: bold;
+            color: #e63946;
+        }
+
+        @media (max-width: 600px) {
+            .passes {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>College Fest 2026</h1>
+    <p>Choose your pass and enjoy the celebration!</p>
+
+    <div class="passes">
+
+        <div class="pass">
+            <h2>Silver Pass</h2>
+            <p class="price">₹499</p>
+            <p>Entry to all events</p>
+        </div>
+
+        <div class="pass">
+            <h2>Gold Pass</h2>
+            <p class="price">₹999</p>
+            <p>Entry + Food Coupons</p>
+        </div>
+
+        <div class="pass">
+            <h2>Platinum Pass</h2>
+            <p class="price">₹1499</p>
+            <p>VIP Entry + Premium Gifts</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
